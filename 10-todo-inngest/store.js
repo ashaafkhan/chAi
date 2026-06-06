@@ -24,6 +24,6 @@ export function updateTodo(id, patch){
 
 export function deleteTodo(id){
     const index = todos.findIndex(todo => todo.id === id)
-    if(index === =1) return false
+    if(index === -1) return false
     return todos.splice(index,1)[0]
 }
